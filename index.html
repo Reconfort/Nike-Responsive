@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="main.css">
+    <title>Nike Home| </title>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <div class="leftNav">
+                <img src="./assets/nike.png" alt="Nike Logo" class="logo">
+                <img src="./assets/menu.png" alt="Bar Menu">
+                <ul>
+                    <li class="active">MAN</li>
+                    <li>WOMAN</li>
+                    <li>KIDS</li>
+                </ul>
+            </div>
+            <div class="rightNav">
+                <img src="./assets/search.png" alt="Nike Logo">
+                <button onclick="OpenModal()">Login</button>
+            </div>
+        </div>
+
+        <div class="body">
+            <div class="left">
+                <span>
+                    <h1>DURANT V467</h1>
+                    <H3>NIKE AIR</H3>
+                    <h6>BLACK EVESION <br> KEVIN DURANT</h6>
+                </span>
+                <div class="similar">
+                    <div class="grid">
+                        <img src="./assets/1.png" alt="">
+                    </div>
+                    <div class="grid">
+                        <img src="./assets/2.png" alt="">
+                    </div>
+                    <div class="grid">
+                        <img src="./assets/3.png" alt="">
+                    </div>
+                </div>
+            </div>
+            <div class="right">
+                <img src="./assets/nikeee.png" alt="">
+                <span>
+                    <h2>$120</h2>
+                    <button>Add to cart</button>
+                </span>
+            </div>
+        </div>
+    </div>
+    <div class="modal">
+        <fieldset id="field">
+            <form name="myForm" onsubmit="return validateForm()">
+                <img src="./assets/person.png" alt="" class="icon">
+                <div class="col">
+                    <label for="Email">Username</label>
+                    <input type="text" name="uname"">
+                </div>
+                <div class="col hidden">
+                    <label for="Email">Phone number</label>
+                    <input type="number" name="phone">
+                </div>
+                <div class="col hidden">
+                    <label for="pass">Email</label>
+                    <input type="email" name="mail">
+                </div>
+                <div class="col">
+                    <label for="pass">Password</label>
+                    <input type="text" name="pass">
+                </div>
+                <input type="submit" value="Sign in" class="submit">
+            </form>
+            <div class="info">
+                <button onclick="closeModal()">Close</button>
+                <h1>Nike</h1>
+                <p>Hello welcome to All Dreams you dream about Sport <br> Platform where you will hold any orginal <br> product you want from Nike.</p>
+                <img src="./assets/nikeW.png" alt="Nike Logo" class="logo">
+                <h3 onclick="changeScreen()">Sign Up</h3>
+            </div>
+        </fieldset>
+    </div>
+    <script src="main.js"></script>
+</body>
+</html>

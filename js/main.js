@@ -7,6 +7,7 @@ const pass1 = document.getElementById('password1')
 const form = document.getElementById('form')
 const errorElement = document.getElementById('error')
 const phone = document.getElementById('phone')
+const Mail = document.getElementById('email')
 const FormIcon = document.getElementById('icon')
 const hide = document.getElementById('hidden')
 const hide1 = document.getElementById('hidden1')
@@ -61,6 +62,14 @@ form.addEventListener('submit', (e) => {
 
   else if(phone.value === "" || phone.value == null){
     messages.push('Phone can not be empty')
+  }
+  
+  else if(phone.value.length < 10 || phone.value.length > 10){
+    messages.push('Phone number must be  10 number')
+  }
+  
+  else if(Mail.value === "" || Mail.value == null){
+    messages.push('Email must be not null')
   }
 
   else if(pass.value === "" || pass.value == null){

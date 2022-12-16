@@ -31,7 +31,6 @@ function cartAdd(){
     wrapper.style.boxShadow="0 0 100px black"
     Image.style.transform="rotate(-20deg)"
     Image.style.marginTop="3%"
-    Image.style.position="absolute"
     Image.style.zIndex="1000"
     Image.style.transform="scale(1.3)"
     Info.style.zIndex="900"
